@@ -24,7 +24,34 @@
                 <a href="./#nosotros">Nosotros</a>
                 <a class="active" href="recursos">Recursos</a>
                 <a href="./contacto">Contacto</a>
+
+                <a class="login" data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas">Ingresar</a>
+
             </nav>
+        </div>
+
+        <!--formulario de "ingreso" Bootstrap-->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasLabel">Ingresar</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="usuario123">
+                <label for="floatingInput">Usuario</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Contraseña</label>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="Check">
+                    <label class="form-check-label" for="Check">Mantener sesión iniciada</label>
+                  </div>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a class="btn btn-primary" href="" role="button">Ingresar</a>
+                    <a class="btn btn-link" href="./create" role="button">Registrarse</a>
+                  </div>
+              </div>
         </div>
         
         <h1 class="title">Patas <span>arriba</span></h1>
